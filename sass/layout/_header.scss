@@ -1,2 +1,26 @@
-
- 
+/*Section Header*/
+.header {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    box-shadow: 0rem 0rem 0.5rem $color-boxshadow;
+    &__logo {
+        width: 11rem;
+        height: auto;
+        font-family: Shrikhand;
+    }
+    &__retour {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 1rem;
+        i {
+            font-size: 1.5rem;
+         }  
+    }
+}
