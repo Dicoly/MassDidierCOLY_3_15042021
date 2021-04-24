@@ -20,7 +20,7 @@ h2 {
     font-size: 1.5rem;
 }
 
-/*Section loader*/
+/*Section chargement*/
 .section-loading {
     display: flex;
     align-items: center;
@@ -77,7 +77,7 @@ h2 {
     }
 }
 
-/*Section ville et lieu*/
+/*Section ville*/
 .lieu {
     text-align: center;
     font-size: 1.2rem;
@@ -249,7 +249,6 @@ h2 {
         }
         &__heart--1 {
             background: -webkit-linear-gradient(170deg, $color-primary, $color-secondary);
-            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
