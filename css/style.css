@@ -126,4 +126,65 @@ h2 {
   box-shadow: 0.1rem 0.1rem 0.9rem grey;
 }
 
+/*Section Fonctionnement*/
+.fonctionnement {
+  padding: 3rem 1rem 3rem 1rem;
+}
+.fonctionnement__titre {
+  margin: 0px;
+  padding-bottom: 1.5rem;
+}
+
+.nav {
+  text-align: left;
+}
+.nav ol {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0rem;
+  padding-left: 1rem;
+  list-style-type: none;
+}
+.nav__menu {
+  background-color: #f9f9fc;
+  font-size: 1rem;
+  box-shadow: 0rem 0.1rem 0.3rem grey;
+  border-radius: 1rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+}
+.nav__menu i {
+  padding: 0rem 1.5rem 0rem 1rem;
+}
+.nav__menu:hover {
+  background-color: #F0e8F8;
+}
+.nav__menu:hover i {
+  color: #9356DC;
+}
+.nav__menu::before {
+  display: block;
+  background-color: #9356DC;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  margin-left: -1.9rem;
+  margin-top: -0.2rem;
+  padding: 0.2rem 0.5rem;
+  color: #fff;
+}
+.nav__menu--choisissez::before {
+  content: "1";
+}
+.nav__menu--composez::before {
+  content: "2";
+}
+.nav__menu--degustez::before {
+  content: "3";
+}
+
 /*# sourceMappingURL=style.css.map */
