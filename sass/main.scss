@@ -112,7 +112,7 @@ h2 {
     &__p {
         margin: 0rem 0rem;
         padding-bottom: 2rem;
-        color: $color-boxshadow;
+        color: $color-footer;
     }
 }
 
@@ -265,6 +265,7 @@ h2 {
             }
     }
 }
+
 /*Section Footer*/
 .footer {
     background-color: $color-footer;
@@ -288,5 +289,42 @@ h2 {
     & i.fas.fa-utensils {
         font-size: 0.8rem;
         padding-right: 1rem;
+    }
+}
+
+/*Media Queries*/
+@media screen and (min-width: $breakpoint-tablette) {
+    .nav ol{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 3fr;
+        grid-column-gap: 1rem;
+        grid-row-gap: 0rem;
+    }
+    .nav__menu {
+        width: 24vw;
+    }
+    .restaurants__cartes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr;
+        grid-column-gap: 2rem;
+        grid-row-gap: 1rem;
+        
+        }
+    .figure__img{
+        height: 25vh;
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    .fonctionnement{
+        padding: 3rem 5rem;
+    }
+    .restaurants {
+        padding: 3rem 5rem;
+    }
+    .footer {
+        padding: 2rem 5rem;
     }
 }
