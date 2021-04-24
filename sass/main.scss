@@ -97,3 +97,34 @@ h2 {
         font-size: 1.2rem;
     }
 }
+
+.reservezmenu {
+    background-color: #f9f9fc;
+    text-align: center;
+    padding: 3rem 0rem 3rem 0rem;
+    &__titre {
+        margin: 0rem 0rem;
+        padding: 0rem 2rem 1rem 2rem;
+        font-family: Shrikhand;
+    }
+    &__p {
+        margin: 0rem 0rem;
+        padding-bottom: 2rem;
+        color: $color-boxshadow;
+    }
+}
+
+.button {
+    background: linear-gradient(175deg, $color-secondary, $color-primary);
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    color: $color-white;
+    box-shadow: 0.1rem 0.1rem 0.3rem $color-boxshadow;
+    &:hover {
+        background: linear-gradient(170deg, $color-secondary, $color-primary);
+        box-shadow: 0.1rem 0.1rem 0.9rem $color-boxshadow;
+    }
+}
