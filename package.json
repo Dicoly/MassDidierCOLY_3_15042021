@@ -1,0 +1,19 @@
+{
+  "name": "projetohmyfood",
+  "version": "1.0.0",
+  "description": "CSS is the palette we use to paint the web, making pages beautiful, identifiable, and responsive. In this class we’ll learn to write clean, maintainable, and modular CSS code through the implementation of designed naming and file structures, such as BEM, and the use of SASS, a CSS precompiler.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dicoly/MassDidierCOLY_3_15042021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dicoly/MassDidierCOLY_3_15042021/issues"
+  },
+  "homepage": "https://github.com/Dicoly/MassDidierCOLY_3_15042021#readme"
+}
