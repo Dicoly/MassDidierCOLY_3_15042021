@@ -68,14 +68,7 @@
     }
 }
 
-.main__menu {
-    display: flex;
-    flex-direction: column;
-    background-color: $color-greyclaire;
-}
-
 .main__entrees{
-    width: 100%;
     &__header__titre{
         font-weight: 300;
         margin: 0rem;
@@ -105,14 +98,16 @@
         border-radius: 1rem;
         padding: 1rem;
         box-shadow: 0.05rem 0.05rem 0.3rem $color-boxshadow;
-        overflow: hidden;
-        cursor: pointer;
+        animation-name: apparition-progressive;
+        animation-duration: 1s;
+        animation-fill-mode: both;
         &__header {
             display: flex;
             flex-direction: column;
             width: 100%;
             &__titre {
                 margin: 0rem 0rem 0.5rem 0rem;
+                font-weight: 500;
             }
             &__suitetitre {
                 margin: 0;
@@ -123,27 +118,34 @@
             align-items: flex-end;
             justify-content: flex-end;
             margin-left: 0.5rem;
-            width: auto;
-            height: auto;
             font-weight: 500;
         }
         &__icon {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 4rem;
             background: $color-tertiary;
-            height: 100%;
+            width: 4rem;
              i {
                 font-size: 1.5rem;
                 color: $color-white;
             }
+        }
+        &--1 {
+            animation-delay: 0s;
+        }
+    
+        &--2 {
+            animation-delay: 0.4s;
+        }
+    
+        &--3 {
+            animation-delay: 0.8s;
         }
     }
 }
 
 .main__plats{
-    width: 100%;
     &__header__titre{
         font-weight: 300;
         margin: 0rem;
@@ -173,14 +175,16 @@
         border-radius: 1rem;
         padding: 1rem;
         box-shadow: 0.05rem 0.05rem 0.3rem $color-boxshadow;
-        overflow: hidden;
-        cursor: pointer;
+        animation-name: apparition-progressive;
+        animation-duration: 1s;
+        animation-fill-mode: both;
         &__header {
             display: flex;
             flex-direction: column;
             width: 100%;
             &__titre {
                 margin: 0rem 0rem 0.5rem 0rem;
+                font-weight: 500;
             }
             &__suitetitre {
                 margin: 0;
@@ -191,27 +195,34 @@
             align-items: flex-end;
             justify-content: flex-end;
             margin-left: 0.5rem;
-            width: auto;
-            height: auto;
             font-weight: 500;
         }
         &__icon {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 4rem;
             background: $color-tertiary;
-            height: 100%;
+            width: 4rem;
              i {
                 font-size: 1.5rem;
                 color: $color-white;
             }
+        }
+        &--1 {
+            animation-delay: 0s;
+        }
+    
+        &--2 {
+            animation-delay: 0.4s;
+        }
+    
+        &--3 {
+            animation-delay: 0.8s;
         }
     }
 }
 
 .main__desserts{
-    width: 100%;
     &__header__titre{
         font-weight: 300;
         margin: 0rem;
@@ -241,14 +252,16 @@
         border-radius: 1rem;
         padding: 1rem;
         box-shadow: 0.05rem 0.05rem 0.3rem $color-boxshadow;
-        overflow: hidden;
-        cursor: pointer;
+        animation-name: apparition-progressive;
+        animation-duration: 1s;
+        animation-fill-mode: both;
         &__header {
             display: flex;
             flex-direction: column;
             width: 100%;
             &__titre {
                 margin: 0rem 0rem 0.5rem 0rem;
+                font-weight: 500;
             }
             &__suitetitre {
                 margin: 0;
@@ -259,21 +272,43 @@
             align-items: flex-end;
             justify-content: flex-end;
             margin-left: 0.5rem;
-            width: auto;
-            height: auto;
             font-weight: 500;
         }
         &__icon {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 4rem;
             background: $color-tertiary;
-            height: 100%;
+            width: 4rem;
              i {
                 font-size: 1.5rem;
                 color: $color-white;
             }
         }
+        &--1 {
+            animation-delay: 0s;
+        }
+    
+        &--2 {
+            animation-delay: 0.4s;
+        }
+    
+        &--3 {
+            animation-delay: 0.8s;
+        }
+    }
+}
+
+@keyframes  apparition-progressive{
+    0% {
+        opacity: 0;
+        z-index: -1;
+        transform: translateY(1rem);
+    }
+    
+    100% {
+        opacity: 1;
+        z-index: 0;
+        transform: translateY(0rem);
     }
 }

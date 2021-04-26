@@ -47,6 +47,9 @@ a {
 .main__button {
   text-align: center;
 }
+.main__button .button--modif {
+  padding: 0.3rem 2.5rem 0.3rem 2.5rem;
+}
 
 /*Section Header*/
 .header {
@@ -352,6 +355,14 @@ a {
   .footer {
     padding: 2rem 5rem;
   }
+
+  .main__menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0px;
+  }
 }
 .image__fond {
   z-index: -1;
@@ -410,15 +421,6 @@ a {
   opacity: 0%;
 }
 
-.main__menu {
-  display: flex;
-  flex-direction: column;
-  background-color: #f9f9fc;
-}
-
-.main__entrees {
-  width: 100%;
-}
 .main__entrees__header__titre {
   font-weight: 300;
   margin: 0rem;
@@ -448,8 +450,9 @@ a {
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 0.05rem 0.05rem 0.3rem grey;
-  overflow: hidden;
-  cursor: pointer;
+  animation-name: apparition-progressive;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 .main__entrees__contenu__header {
   display: flex;
@@ -458,6 +461,7 @@ a {
 }
 .main__entrees__contenu__header__titre {
   margin: 0rem 0rem 0.5rem 0rem;
+  font-weight: 500;
 }
 .main__entrees__contenu__header__suitetitre {
   margin: 0;
@@ -467,26 +471,29 @@ a {
   align-items: flex-end;
   justify-content: flex-end;
   margin-left: 0.5rem;
-  width: auto;
-  height: auto;
   font-weight: 500;
 }
 .main__entrees__contenu__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 4rem;
   background: #99E2D0;
-  height: 100%;
+  width: 4rem;
 }
 .main__entrees__contenu__icon i {
   font-size: 1.5rem;
   color: #fff;
 }
-
-.main__plats {
-  width: 100%;
+.main__entrees__contenu--1 {
+  animation-delay: 0s;
 }
+.main__entrees__contenu--2 {
+  animation-delay: 0.4s;
+}
+.main__entrees__contenu--3 {
+  animation-delay: 0.8s;
+}
+
 .main__plats__header__titre {
   font-weight: 300;
   margin: 0rem;
@@ -516,8 +523,9 @@ a {
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 0.05rem 0.05rem 0.3rem grey;
-  overflow: hidden;
-  cursor: pointer;
+  animation-name: apparition-progressive;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 .main__plats__contenu__header {
   display: flex;
@@ -526,6 +534,7 @@ a {
 }
 .main__plats__contenu__header__titre {
   margin: 0rem 0rem 0.5rem 0rem;
+  font-weight: 500;
 }
 .main__plats__contenu__header__suitetitre {
   margin: 0;
@@ -535,26 +544,29 @@ a {
   align-items: flex-end;
   justify-content: flex-end;
   margin-left: 0.5rem;
-  width: auto;
-  height: auto;
   font-weight: 500;
 }
 .main__plats__contenu__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 4rem;
   background: #99E2D0;
-  height: 100%;
+  width: 4rem;
 }
 .main__plats__contenu__icon i {
   font-size: 1.5rem;
   color: #fff;
 }
-
-.main__desserts {
-  width: 100%;
+.main__plats__contenu--1 {
+  animation-delay: 0s;
 }
+.main__plats__contenu--2 {
+  animation-delay: 0.4s;
+}
+.main__plats__contenu--3 {
+  animation-delay: 0.8s;
+}
+
 .main__desserts__header__titre {
   font-weight: 300;
   margin: 0rem;
@@ -584,8 +596,9 @@ a {
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 0.05rem 0.05rem 0.3rem grey;
-  overflow: hidden;
-  cursor: pointer;
+  animation-name: apparition-progressive;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 .main__desserts__contenu__header {
   display: flex;
@@ -594,6 +607,7 @@ a {
 }
 .main__desserts__contenu__header__titre {
   margin: 0rem 0rem 0.5rem 0rem;
+  font-weight: 500;
 }
 .main__desserts__contenu__header__suitetitre {
   margin: 0;
@@ -603,21 +617,40 @@ a {
   align-items: flex-end;
   justify-content: flex-end;
   margin-left: 0.5rem;
-  width: auto;
-  height: auto;
   font-weight: 500;
 }
 .main__desserts__contenu__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 4rem;
   background: #99E2D0;
-  height: 100%;
+  width: 4rem;
 }
 .main__desserts__contenu__icon i {
   font-size: 1.5rem;
   color: #fff;
+}
+.main__desserts__contenu--1 {
+  animation-delay: 0s;
+}
+.main__desserts__contenu--2 {
+  animation-delay: 0.4s;
+}
+.main__desserts__contenu--3 {
+  animation-delay: 0.8s;
+}
+
+@keyframes apparition-progressive {
+  0% {
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    z-index: 0;
+    transform: translateY(0rem);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
