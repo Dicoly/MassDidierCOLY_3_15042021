@@ -61,14 +61,15 @@
         }
         &--2 {
             transition-duration: 0.3s;
-                &:hover {
-                    opacity: 0%;
-                }
+            &:hover {
+                opacity: 0%;
+            }
         }   
     }
 }
 
 .main__entrees{
+    margin-bottom: 0.5rem;
     &__header__titre{
         font-weight: 300;
         margin: 0rem;
@@ -99,18 +100,21 @@
         padding: 1rem;
         box-shadow: 0.05rem 0.05rem 0.3rem $color-boxshadow;
         animation-name: apparition-progressive;
-        animation-duration: 1s;
+        animation-duration: 1.5s;
         animation-fill-mode: both;
+        cursor: pointer;
         &__header {
             display: flex;
             flex-direction: column;
             width: 100%;
+            white-space: nowrap;
             &__titre {
                 margin: 0rem 0rem 0.5rem 0rem;
                 font-weight: 500;
             }
             &__suitetitre {
                 margin: 0;
+                font-size: 0.8rem;
             }
         }
         &__prix {
@@ -126,26 +130,34 @@
             justify-content: center;
             background: $color-tertiary;
             width: 4rem;
-             i {
+            i {
                 font-size: 1.5rem;
                 color: $color-white;
+                &:hover {
+                    animation-name: rotation-icon;
+                    animation-duration: 0.5s;
+                }
             }
         }
         &--1 {
             animation-delay: 0s;
         }
-    
+        
         &--2 {
             animation-delay: 0.4s;
         }
-    
+        
         &--3 {
             animation-delay: 0.8s;
+        }
+        &--4 {
+            animation-delay: 1.2s;
         }
     }
 }
 
 .main__plats{
+    margin-bottom: 0.5rem;
     &__header__titre{
         font-weight: 300;
         margin: 0rem;
@@ -178,16 +190,19 @@
         animation-name: apparition-progressive;
         animation-duration: 1s;
         animation-fill-mode: both;
+        cursor: pointer;
         &__header {
             display: flex;
             flex-direction: column;
             width: 100%;
+            white-space: nowrap;
             &__titre {
                 margin: 0rem 0rem 0.5rem 0rem;
                 font-weight: 500;
             }
             &__suitetitre {
                 margin: 0;
+                font-size: 0.8rem;
             }
         }
         &__prix {
@@ -203,19 +218,23 @@
             justify-content: center;
             background: $color-tertiary;
             width: 4rem;
-             i {
+            i {
                 font-size: 1.5rem;
                 color: $color-white;
+                &:hover {
+                    animation-name: rotation-icon;
+                    animation-duration: 0.5s;
+                }
             }
         }
         &--1 {
             animation-delay: 0s;
         }
-    
+        
         &--2 {
             animation-delay: 0.4s;
         }
-    
+        
         &--3 {
             animation-delay: 0.8s;
         }
@@ -223,6 +242,7 @@
 }
 
 .main__desserts{
+    margin-bottom: 0.5rem;
     &__header__titre{
         font-weight: 300;
         margin: 0rem;
@@ -255,16 +275,19 @@
         animation-name: apparition-progressive;
         animation-duration: 1s;
         animation-fill-mode: both;
+        cursor: pointer;
         &__header {
             display: flex;
             flex-direction: column;
             width: 100%;
+            white-space: nowrap;
             &__titre {
                 margin: 0rem 0rem 0.5rem 0rem;
                 font-weight: 500;
             }
             &__suitetitre {
                 margin: 0;
+                font-size: 0.8rem;
             }
         }
         &__prix {
@@ -280,26 +303,30 @@
             justify-content: center;
             background: $color-tertiary;
             width: 4rem;
-             i {
+            i {
                 font-size: 1.5rem;
                 color: $color-white;
+                &:hover {
+                    animation-name: rotation-icon;
+                    animation-duration: 0.5s;
+                }
             }
         }
         &--1 {
             animation-delay: 0s;
         }
-    
+        
         &--2 {
             animation-delay: 0.4s;
         }
-    
+        
         &--3 {
             animation-delay: 0.8s;
         }
     }
 }
 
-@keyframes  apparition-progressive{
+@keyframes apparition-progressive {
     0% {
         opacity: 0;
         z-index: -1;
@@ -310,5 +337,15 @@
         opacity: 1;
         z-index: 0;
         transform: translateY(0rem);
+    }
+}
+
+@keyframes rotation-icon {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
     }
 }

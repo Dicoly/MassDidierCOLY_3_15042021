@@ -15,8 +15,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 2fr;
         grid-column-gap: 2rem;
-        grid-row-gap: 1rem;
-        
+        grid-row-gap: 1rem;     
         }
     .figure__img{
         height: 25vh;
@@ -32,6 +31,11 @@
     }
     .footer {
         padding: 2rem 5rem;
+    }
+    .main {
+        &__entrees, &__plats, &__desserts {
+        margin-right: 0.5rem;
+        }
     }
     .main__menu {
         display: grid;
