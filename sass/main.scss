@@ -102,6 +102,24 @@
         animation-duration: 1.5s;
         animation-fill-mode: both;
         cursor: pointer;
+        overflow: hidden;
+            &:hover {
+                .main__entrees__contenu__icon {
+                    animation-name: translation-icon;
+                    animation-duration: $anim-duree-rest;
+                    animation-fill-mode: forwards;
+                }
+                .main__entrees__contenu__prix {
+                    animation-name: translation-icon;
+                    animation-duration: $anim-duree-rest;
+                    animation-fill-mode: forwards;
+                }   
+                i {
+                    animation: rotation-icon;
+                    animation-duration: $anim-duree-rest;
+                    animation-fill-mode: forwards;
+                }
+            }
         &__header {
             display: flex;
             flex-direction: column;
@@ -109,7 +127,6 @@
             white-space: nowrap;
             &__titre {
                 margin: 0rem 0rem 0.5rem 0rem;
-                font-weight: 500;
             }
             &__suitetitre {
                 margin: 0;
@@ -129,28 +146,28 @@
             justify-content: center;
             background: $color-tertiary;
             width: 4rem;
+            position: absolute;
+            right: -4rem;
+            height: 100%;
+            margin-top: -1rem;
             i {
                 font-size: 1.5rem;
                 color: $color-white;
-                &:hover {
-                    animation-name: rotation-icon;
-                    animation-duration: 0.5s;
-                }
             }
         }
         &--1 {
-            animation-delay: 0s;
+            animation-delay: $delay--1;
         }
         
         &--2 {
-            animation-delay: 0.4s;
+            animation-delay: $delay--2;
         }
         
         &--3 {
-            animation-delay: 0.8s;
+            animation-delay: $delay--3;
         }
         &--4 {
-            animation-delay: 1.2s;
+            animation-delay: $delay--4;
         }
     }
 }
@@ -190,6 +207,24 @@
         animation-duration: 1s;
         animation-fill-mode: both;
         cursor: pointer;
+        overflow: hidden;
+            &:hover {
+                .main__plats__contenu__icon {
+                    animation-name: translation-icon;
+                    animation-duration: $anim-duree-rest;
+                    animation-fill-mode: forwards;
+                }
+                .main__plats__contenu__prix {
+                    animation-name: translation-icon;
+                    animation-duration: $anim-duree-rest;
+                    animation-fill-mode: forwards;
+                }   
+                i {
+                    animation: rotation-icon;
+                    animation-duration: $anim-duree-rest;
+                    animation-fill-mode: forwards;
+                }
+            }
         &__header {
             display: flex;
             flex-direction: column;
@@ -197,7 +232,6 @@
             white-space: nowrap;
             &__titre {
                 margin: 0rem 0rem 0.5rem 0rem;
-                font-weight: 500;
             }
             &__suitetitre {
                 margin: 0;
@@ -217,25 +251,25 @@
             justify-content: center;
             background: $color-tertiary;
             width: 4rem;
+            position: absolute;
+            right: -4rem;
+            height: 100%;
+            margin-top: -1rem;
             i {
                 font-size: 1.5rem;
                 color: $color-white;
-                &:hover {
-                    animation-name: rotation-icon;
-                    animation-duration: 0.5s;
-                }
             }
         }
         &--1 {
-            animation-delay: 0s;
+            animation-delay: $delay--1;
         }
         
         &--2 {
-            animation-delay: 0.4s;
+            animation-delay: $delay--2;
         }
         
         &--3 {
-            animation-delay: 0.8s;
+            animation-delay: $delay--3;
         }
     }
 }
@@ -272,9 +306,27 @@
         padding: 1rem;
         box-shadow: 0.05rem 0.05rem 0.3rem $color-boxshadow;
         animation-name: apparition-progressive;
-        animation-duration: 1s;
+        animation-duration: $anim-duree-rest;
         animation-fill-mode: both;
         cursor: pointer;
+        overflow: hidden;
+            &:hover {
+                .main__desserts__contenu__icon {
+                    animation-name: translation-icon;
+                    animation-duration: $anim-duree-rest;
+                    animation-fill-mode: forwards;
+                }
+                .main__desserts__contenu__prix {
+                    animation-name: translation-icon;
+                    animation-duration: $anim-duree-rest;
+                    animation-fill-mode: forwards;
+                }   
+                i {
+                    animation: rotation-icon;
+                    animation-duration: $anim-duree-rest;
+                    animation-fill-mode: forwards;
+                }
+            }
         &__header {
             display: flex;
             flex-direction: column;
@@ -282,7 +334,6 @@
             white-space: nowrap;
             &__titre {
                 margin: 0rem 0rem 0.5rem 0rem;
-                font-weight: 500;
             }
             &__suitetitre {
                 margin: 0;
@@ -302,25 +353,25 @@
             justify-content: center;
             background: $color-tertiary;
             width: 4rem;
+            position: absolute;
+            right: -4rem;
+            height: 100%;
+            margin-top: -1rem;
             i {
                 font-size: 1.5rem;
                 color: $color-white;
-                &:hover {
-                    animation-name: rotation-icon;
-                    animation-duration: 0.5s;
-                }
             }
         }
         &--1 {
-            animation-delay: 0s;
+            animation-delay: $delay--1;
         }
         
         &--2 {
-            animation-delay: 0.4s;
+            animation-delay: $delay--2;
         }
         
         &--3 {
-            animation-delay: 0.8s;
+            animation-delay: $delay--3;
         }
     }
 }
@@ -341,10 +392,20 @@
 
 @keyframes rotation-icon {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(360deg);
     }
     
     100% {
-        transform: rotate(360deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes translation-icon {
+    0% {
+        transform: translateX(0rem);
+    }
+    
+    100% {
+        transform: translateX(-4rem);
     }
 }

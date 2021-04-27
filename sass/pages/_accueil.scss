@@ -95,6 +95,13 @@
     &__menu--degustez::before {
         content: "3";
     }
+    &__menu--degustez {
+        background-color: $color-light-primary;
+         i {
+             color: $color-primary;
+         }
+         
+    }
 }
 
 /*Section Restaurant*/

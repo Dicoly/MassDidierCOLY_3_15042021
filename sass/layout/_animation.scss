@@ -6,9 +6,10 @@
     width: 100vw;
     height: 100vh;
     position: fixed;
-    top: 0; left: 0;
-    z-index: 2;
-    background: rgb(255, 255, 255, 0.8);
+    top: 0; 
+    left: 0;
+    z-index: 1;
+    background: $color-white;
     animation: loader;
     animation-delay: 1.5s;
     animation-fill-mode: both;
@@ -18,19 +19,19 @@
         width: 70px;
         height: 70px;
         border-radius: 50%;
-        border: 10px solid #fff;
+        border: 10px solid $color-white;
         border-color: $color-primary $color-secondary $color-tertiary $color-grey;
         animation: loading 1.5s linear infinite;
       }
 }
-  @keyframes loading {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @keyframes loader {
     100% {
         opacity: 0;
