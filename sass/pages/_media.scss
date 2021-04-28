@@ -65,25 +65,25 @@
         grid-row-gap: 0px;
     }
 
-.cartes {
-    &__contenu {
-        &:hover {
-            .cartes__contenu__icon {
-                animation-name: translation-icon;
-                animation-duration: $anim-duree-rest;
-                animation-fill-mode: forwards;
-            }
-            .cartes__contenu__prix {
-                animation-name: translation-icon;
-                animation-duration: $anim-duree-rest;
-                animation-fill-mode: forwards;
-            }   
-            i {
-                animation: rotation-icon;
-                animation-duration: $anim-duree-rest;
-                animation-fill-mode: forwards;
+    .cartes {
+        &__contenu {
+            &:hover {
+                .cartes__contenu__icon {
+                    animation-name: translation-icon;
+                    animation-duration: $anim-duree-rest;
+                    animation-fill-mode: forwards;
+                }
+                .cartes__contenu__prix {
+                    animation-name: translation-icon;
+                    animation-duration: $anim-duree-rest;
+                    animation-fill-mode: forwards;
+                }   
+                i {
+                    animation: rotation-icon;
+                    animation-duration: $anim-duree-rest;
+                    animation-fill-mode: forwards;
+                }
             }
         }
     }
-}
 }
