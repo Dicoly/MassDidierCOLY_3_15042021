@@ -85,7 +85,7 @@ a {
 }
 
 /*chargement*/
-.section-loading {
+.loading {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,7 +100,7 @@ a {
   animation-delay: 1.5s;
   animation-fill-mode: both;
 }
-.section-loading__chargement {
+.loading__chargement {
   content: "";
   display: block;
   width: 70px;
@@ -182,7 +182,7 @@ a {
 }
 
 /*ville et lieu*/
-.lieu {
+.localisation {
   text-align: center;
   font-size: 1.2rem;
   background-color: #f2f2f2;
@@ -190,7 +190,7 @@ a {
   padding: 0rem;
   width: 100%;
 }
-.lieu__map {
+.localisation__map {
   padding: 0rem;
   margin: 0rem 2rem 0rem 0rem;
   height: 4rem;
@@ -199,7 +199,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.lieu__map i {
+.localisation__map i {
   padding-right: 1rem;
   font-size: 1.2rem;
 }
