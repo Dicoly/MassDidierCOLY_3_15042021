@@ -1,0 +1,25 @@
+/*Section Footer*/
+.footer {
+    background-color: $color-footer;
+    color: $color-white;
+    padding: 1.5rem 1rem 1.5rem 2rem;
+    font-size: 1rem;
+    &__logo {
+        padding-bottom: 0.8rem;
+        width: 7rem;
+    }
+    &__div {
+        padding-bottom: 0.6rem;
+         a {
+             color: $color-white;
+         }
+    }
+    & i.fas.fa-hands-helping {
+        font-size: 0.6rem;
+        padding-right: 0.8rem;
+    }
+    & i.fas.fa-utensils {
+        font-size: 0.8rem;
+        padding-right: 1rem;
+    }
+}

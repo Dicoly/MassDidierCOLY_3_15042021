@@ -3,6 +3,7 @@ $color-primary: #9356DC;
 $color-light-primary:#F4EDFE;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-dark-tertiary: #056e54;
 $color-white: #fff;
 $color-greyclaire: #f9f9fc;
 $color-boxshadow: grey;
@@ -14,10 +15,22 @@ $color-black: black;
 $breakpoint-desktop: 1140px;
 $breakpoint-tablette: 768px;
 
+/*Animation duration et delay loading*/
+$delay-loading: 1.5s;
+$duree-loading: 1.5s;
+
 /*Animation delay apparition progressive*/
 $delay--1: 0s;
 $delay--2: 0.4s;
 $delay--3: 0.8s;
 $delay--4: 1.2s;
-/*Animation duration pages restaurants*/
+
+/*Animation duration pages restaurants translation et rotation icon*/
 $anim-duree-rest: 1s;
+
+/*Transition duration heart*/
+$trans-duree-heart: 0.3s;
+
+/*Animation rotation*/
+$rotate-0: 0deg;
+$rotate-360: 360deg;

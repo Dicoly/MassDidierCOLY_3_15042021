@@ -2,8 +2,8 @@
 .lieu {
     text-align: center;
     font-size: 1.2rem;
-    background-color: #f2f2f2;
-    margin: 0rem 0rem 0rem 0rem;
+    background-color: $color-grey;
+    margin: 0rem;
     padding: 0rem;
     width: 100%;
     &__map {
@@ -21,8 +21,8 @@
     }
 }
 
-.reservezmenu {
-    background-color: #f9f9fc;
+.explorer {
+    background-color: $color-greyclaire;
     text-align: center;
     padding: 3rem 0rem 3rem 0rem;
     &__titre {
@@ -45,7 +45,7 @@
     }
 }
 
-.nav {
+.fonct {
     text-align: left;
     & ol {
         text-decoration: none;
@@ -55,7 +55,7 @@
         padding-left: 1rem;
         list-style-type: none;
     }
-    &__menu {
+    &__liste {
         background-color: $color-greyclaire;
         font-size: 1rem;
         box-shadow: 0rem 0.1rem 0.3rem $color-boxshadow;
@@ -66,16 +66,16 @@
         display: flex;
         align-items: center;
     }
-    &__menu i {
+    &__liste i {
         padding: 0rem 1.5rem 0rem 1rem;
     }
-    &__menu:hover {
-        background-color: #F0e8F8;
+    &__liste:active {
+        background-color: $color-light-primary;
         & i {
             color: $color-primary;
         }
     }
-    &__menu::before {
+    &__liste::before {
          display: block;
          background-color: $color-primary;
          border-radius: 50%;
@@ -86,21 +86,14 @@
          padding: 0.2rem 0.5rem;
          color: $color-white;
      }
-    &__menu--choisissez::before {
+    &__liste--1::before {
         content: "1";
     }
-    &__menu--composez::before {
+    &__liste--2::before {
         content: "2";
     }
-    &__menu--degustez::before {
+    &__liste--3::before {
         content: "3";
-    }
-    &__menu--degustez {
-        background-color: $color-light-primary;
-         i {
-             color: $color-primary;
-         }
-         
     }
 }
 
@@ -136,6 +129,8 @@
         top: 1rem;
         background-color: $color-tertiary;
         padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+        color: $color-dark-tertiary;
+        border-radius: 0.2rem;
     }
     &__figcaption {
         padding-left: 1rem;
@@ -149,52 +144,29 @@
             margin: 0rem;
             padding-bottom: 1rem;
         }
-        &__heart {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            font-size: 1.5rem;
-            top: 1rem;
-            right: 1rem;
-            background: $color-white;
-        }
-        &__heart--1 {
-            background: -webkit-linear-gradient(170deg, $color-primary, $color-secondary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        &__heart--2 {
-            transition-duration: 0.3s;
-                &:hover {
-                    opacity: 0%;
-                }
-        }   
     }
 }
 
-/*Section Footer*/
-.footer {
-    background-color: $color-footer;
-    color: $color-white;
-    padding: 1.5rem 1rem 1.5rem 2rem;
-    font-size: 1rem;
-    &__logo {
-        padding-bottom: 0.8rem;
-        width: 7rem;
-    }
-    &__div {
-        padding-bottom: 0.6rem;
-         a {
-             color: $color-white;
-         }
-    }
-    & i.fas.fa-hands-helping {
-        font-size: 0.6rem;
-        padding-right: 0.8rem;
-    }
-    & i.fas.fa-utensils {
-        font-size: 0.8rem;
-        padding-right: 1rem;
-    }
+.heart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1rem;
+    background: $color-white;
+    cursor: pointer;
 }
+
+.heart--1 {
+    background: -webkit-linear-gradient(170deg, $color-primary, $color-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.heart--2 {
+    transition-duration: $trans-duree-heart;
+        &:active {
+            opacity: 0%;
+        }
+}   
