@@ -1,3 +1,30 @@
+/*Chargement de la page web*/
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 1;
+    background: $color-white;
+    animation: loader;
+    animation-delay: $delay-loading;
+    animation-fill-mode: both;
+    &__chargement {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 10px solid $color-white;
+        border-color: $color-primary $color-secondary $color-tertiary $color-grey;
+        animation: loading $duree-loading linear infinite;
+      }
+}
+
 /*ville et lieu*/
 .localisation {
     text-align: center;
@@ -21,6 +48,7 @@
     }
 }
 
+/*Section Explorer*/
 .explorer {
     background-color: $color-greyclaire;
     text-align: center;
@@ -167,6 +195,6 @@
 .heart--2 {
     transition-duration: $trans-duree-heart;
         &:active {
-            opacity: 0%;
+            opacity: $opacity-0;
         }
 }   

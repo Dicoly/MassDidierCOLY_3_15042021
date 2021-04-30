@@ -20,17 +20,22 @@ $delay-loading: 1.5s;
 $duree-loading: 1.5s;
 
 /*Animation delay apparition progressive*/
-$delay--1: 0s;
-$delay--2: 0.4s;
-$delay--3: 0.8s;
-$delay--4: 1.2s;
+$delay--1: 0.4s;
+$delay--2: 0.8s;
+$delay--3: 1.2s;
+$delay--4: 1.6s;
 
 /*Animation duration pages restaurants translation et rotation icon*/
 $anim-duree-rest: 1s;
-
+$rotate-0: 0deg;
+$rotate-360: 360deg;
+$trans-X: -4rem;
+$trans-Y0: 0rem;
+$trans-Y1: 1rem;
+$delay-trans-retour: -0.2s;
 /*Transition duration heart*/
 $trans-duree-heart: 0.3s;
 
-/*Animation rotation*/
-$rotate-0: 0deg;
-$rotate-360: 360deg;
+/*Opacité*/
+$opacity-0: 0;
+$opacity-1: 1;

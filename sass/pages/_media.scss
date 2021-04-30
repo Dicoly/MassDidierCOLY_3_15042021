@@ -16,7 +16,7 @@
         grid-template-rows: 2fr;
         grid-column-gap: 2rem;
         grid-row-gap: 1rem;     
-        }
+    }
     .figure__img{
         height: 25vh;
     }
@@ -39,12 +39,12 @@
     .restaurants {
         padding: 3rem 5rem;
     }
-   
+    
     .heart--2 {
         transition-duration: $trans-duree-heart;
-            &:hover {
-                opacity: 0%;
-            }
+        &:hover {
+            opacity: $opacity-0;
+        }
     }   
     
     .footer {
@@ -54,7 +54,7 @@
     /*Page Restaurant*/
     .principel {
         &__entrees, &__plats, &__desserts {
-        margin-right: 0.5rem;
+            margin-right: 0.5rem;
         }
     }
     .menu {
@@ -64,7 +64,7 @@
         grid-column-gap: 1rem;
         grid-row-gap: 0px;
     }
-
+    
     .cartes {
         &__contenu {
             &:hover {
