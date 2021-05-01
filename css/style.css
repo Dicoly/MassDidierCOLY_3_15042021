@@ -408,14 +408,14 @@ a {
   top: 0rem;
 }
 
-.section__menu {
+.section-menu {
   margin-bottom: 0.5rem;
 }
-.section__menu__header__titre {
+.section-menu__header__titre {
   margin: 0rem;
   position: relative;
 }
-.section__menu__header__titre::after {
+.section-menu__header__titre::after {
   content: "";
   bottom: -0.5rem;
   background-color: #99E2D0;
