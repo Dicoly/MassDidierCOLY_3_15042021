@@ -607,9 +607,6 @@ a {
     animation-duration: 1s;
     animation-fill-mode: forwards;
   }
-  .cartes__contenu:hover .cartes__contenu__header {
-    margin-right: 4rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
