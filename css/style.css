@@ -462,6 +462,9 @@ a {
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
+.cartes__contenu:active .cartes__contenu__header {
+  margin-right: 4rem;
+}
 .cartes__contenu__header {
   display: flex;
   flex-direction: column;
